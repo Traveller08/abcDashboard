@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Traveller08/abcDashboard/static/css/main.1b7ddeda.css",
-    "main.js": "/Traveller08/abcDashboard/static/js/main.55669b81.js",
-    "static/js/787.cda612ba.chunk.js": "/Traveller08/abcDashboard/static/js/787.cda612ba.chunk.js",
-    "static/media/logo.svg": "/Traveller08/abcDashboard/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "index.html": "/Traveller08/abcDashboard/index.html",
-    "main.1b7ddeda.css.map": "/Traveller08/abcDashboard/static/css/main.1b7ddeda.css.map",
-    "main.55669b81.js.map": "/Traveller08/abcDashboard/static/js/main.55669b81.js.map",
-    "787.cda612ba.chunk.js.map": "/Traveller08/abcDashboard/static/js/787.cda612ba.chunk.js.map"
+    "main.css": "/abcDashboard/static/css/main.1b7ddeda.css",
+    "main.js": "/abcDashboard/static/js/main.de629e88.js",
+    "static/js/787.cda612ba.chunk.js": "/abcDashboard/static/js/787.cda612ba.chunk.js",
+    "static/media/logo.svg": "/abcDashboard/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/abcDashboard/index.html",
+    "main.1b7ddeda.css.map": "/abcDashboard/static/css/main.1b7ddeda.css.map",
+    "main.de629e88.js.map": "/abcDashboard/static/js/main.de629e88.js.map",
+    "787.cda612ba.chunk.js.map": "/abcDashboard/static/js/787.cda612ba.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1b7ddeda.css",
-    "static/js/main.55669b81.js"
+    "static/js/main.de629e88.js"
   ]
 }
