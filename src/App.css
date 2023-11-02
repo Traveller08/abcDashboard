@@ -13,6 +13,37 @@
   }
 }
 
+:root {
+  --primary: #0048AD;
+  --sidebar-menu-hover-bg: #E0EDFF;
+  --search-bar-bg: #F9FAFB;
+  --search-bar-color:#667185;
+  --border-color: #E4E7EC;
+  --table-header-bg: #EBF3FF;
+  --body-bg: #F9FAFB;
+  --gray-text: #344054;
+  --gray-text-hover:#101928;
+  --icon-bg: #f0f2f5;
+  --text-color-gray:#475367;
+  --table-data-border:#EFEFEF;
+  --checkbox-border:#C2C2C2;
+}
+.btn{
+  background-color: var(--primary);
+  padding: 12px 24px;
+  border-radius: 6px;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  width: 100%;
+}
+
+.btn:hover{
+  cursor: pointer;
+  opacity: 0.9;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -35,4 +66,420 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+.dashboard{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+
+  height: 100vh;
+}
+
+.sidebar{
+  width: 20%;
+ 
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin: 32px;
+}
+.main-content-container{
+  width: 80%;
+  
+  background-color: var(--search-bar-bg);
+}
+
+.sidebar-header{
+  width: 100%;
+  border-radius: 4px;
+  padding: 8px 24px;
+  margin-bottom: 5%;
+  align-self: flex-start;
+}
+.sidebar-menu{
+  width: 100%;
+  padding: 0px 8px;
+  flex: 1; /* Take up remaining vertical space */
+  display: flex;
+  flex-direction: column;
+}
+.sidebar-footer{
+  width: 100%;
+  background-color: var(--sidebar-menu-hover-bg);
+  border-radius: 8px;
+  padding: 16px;
+  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.sidebar-title{
+  margin: 2px;
+  color: var(--primary);
+  font-weight: 700;
+  font-size: 24px;
+}
+.sidebar-menu-item{
+ 
+  border-radius: 4px;
+  padding: 12px 16px;
+  display: flex;
+  flex-direction: row;
+}
+.sidebar-menu-item-icon{
+  color: #000000;
+}
+.sidebar-menu-item:hover, .active{
+  color: var(--gray-text-hover);
+  cursor: pointer;
+  background-color: var(--sidebar-menu-hover-bg);
+  font-weight: 500;
+}
+.sidebar-menu-item-title{
+  font-size: 14px;
+  color: var(--gray-text);
+  margin-left: 10px;
+}
+
+.sidebar-footer-icon{
+  color: var(--primary);
+  font-weight: 700;
+  margin-bottom: 1%;
+}
+.sidebar-footer-heading{
+  color: var(--gray-text-hover);
+  font-weight: 600;
+  font-size: 14px;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+.sidebar-footer-text{
+  color: var(--text-color-gray);
+  font-weight: 400;
+  font-size: 12px;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  
+}
+.sidebar-footer-button{
+  width: 100%;
+  margin-top: 1%;
+}
+.sidebar-footer-button button{
+  width: 100%;
+}
+
+
+
+
+
+.main-content-header{
+  display: flex;
+  flex-direction: row;
+  padding: 12px 36px;
+  border: 0px 0px 1px 0px;
+  background-color: white;
+}
+.main-content-body{
+  padding: 36px;
+}
+
+.search-container {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--search-bar-bg);
+  width: 50%;
+  border-radius: 4px;
+  padding: 8px;
+  align-self: flex-start;
+  color: var(--search-bar-color);
+  font-size: 14px;
+}
+
+#search {
+ border: none;
+ background-color: var(--search-bar-bg);
+ margin-left: 5px;
+ width: 100%;
+ outline: none;
+}
+
+#search-icon{
+
+}
+.icon-container{
+
+  display: flex;
+  flex:1;
+  flex-direction: row-reverse;
+  align-self: flex-end;
+}
+.header-icon{
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: var(--icon-bg);
+  margin-right: 5px;
+ 
+  font-size: 20px;
+}
+.pd-10{
+  padding: 10px;
+}
+#profile-photo{
+  width: 100%;
+  border-radius: 50%;
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+ 
+ 
+
+}
+.mt-5{
+  margin-top: 5%;
+}
+.mt-3{
+  margin-top: 3%;
+}
+.row .greeting{
+  font-weight: 600;
+  font-size: 24px;
+  color: black;
+}
+.row .text{
+  font-size: 16px;
+  color: var(--text-color-gray);
+}
+.text-container{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  
+}
+.button-container{
+  width: 20%;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  border: 1px solid var(--border-color);
+  background-color: white;
+  width: 29%;
+  border-radius: 12px;
+  padding: 16px;
+}
+.card-header-icon{
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--border-color);
+  padding: 5px;
+  margin-bottom: 2%;
+}
+.card .quantity{
+  font-weight: 600;
+  font-size: 20px;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+.card .text{
+  margin-top: 2%;
+}
+
+.table-container{
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  width: 100%;
+  padding: 20px;
+ 
+}
+.table-container-header{
+  text-align: left;
+  font-weight: 600;
+  font-size: 18px;
+  color: black;
+}
+hr{
+  color: var(--gray-text);
+}
+.table-container table{
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 10px; /* Add spacing between columns */
+  table-layout: fixed; 
+  /* background-color: red; */
+}
+
+
+
+.table-container td{
+  border-bottom: 1px solid var(--table-data-border); 
+  /* margin-left: 2%; */
+  text-align: left;
+  padding: 14px 16px;
+  font-size: 14px;
+ 
+}
+
+
+/* td input{
+  border-radius: 6px;
+  height: 20px;
+  width: 20px;
+  border: 1px solid var(--checkbox-border);
+  outline: none;
+} */
+.table-header{
+  background-color: var(--table-header-bg);
+}
+
+.custom-checkbox-label {
+  position: relative;
+  display: inline-block;
+  width: 20px; /* Adjust the size of the checkbox */
+  height: 20px; /* Adjust the size of the checkbox */
+  border: 1px solid var(--checkbox-border); /* Border color */
+  border-radius: 6px; /* Rounded corners */
+}
+
+.custom-checkbox {
+  display: none; /* Hide the default checkbox */
+}
+
+.custom-checkbox:checked + .custom-checkbox-label {
+  background-color: #0048AD; /* Change background when checked */
+}
+
+.custom-checkbox:checked + .custom-checkbox-label::after {
+  content: "";
+  position: absolute;
+  top: 4px; /* Adjust the checkmark's vertical position */
+  left: 4px; /* Adjust the checkmark's horizontal position */
+  width: 10px; /* Adjust the size of the checkmark */
+  height: 5px; /* Adjust the size of the checkmark */
+  border: 1px solid #fff; /* Checkmark color */
+  border-left: none;
+  border-top: none;
+  transform: rotate(235deg);
+}
+
+
+/* 
+brand name: 0048AD
+sidebar menu hove background : E0EDFF
+search bar background: F9FAFB
+border color: E7EAEE
+table header : EBF3FF
+bakground body: F9FAFB
+gray text : 344054
+icon background : f0f2f5
+*/
+
+.modal-container{
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.modal{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 40px 50px;
+  border-radius: 16px;
+  width: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.row-icon{
+  align-self: center;
+
+  display: flex;
+  flex-direction: column;
+}
+.dropdown-container,.link-input-container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+label{
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+.ml-5{
+  margin-left: 10px;
+}
+.row-icon :hover{
+  cursor: pointer;
+}
+.dropdown-container select, .link-input-container input{
+  border-radius: 8px;
+  border: 1px solid #D0D5DD;
+  padding: 16px;
+}
+.dropdown-container option{
+  padding: 16px;
+  color: #770d0d;
+}
+.file-upload-container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border: 1px dashed #D0D5DD;
+  border-radius: 8px;
+  padding: 40px 16px;
+  justify-content: center;
+  align-items: center;
+}
+.upload-icon{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--sidebar-menu-hover-bg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.checkbox-container{
+  width: 100%;
+  display: flex;
+}
+.modal .button-container{
+  width: 100%;
+}
+.file-upload-heading{
+  font-size: 14px;
+}
+.text{
+  font-size: 12px;
 }
